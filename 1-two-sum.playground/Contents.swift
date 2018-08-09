@@ -27,14 +27,14 @@ func twoSum(_ nums: [Int], for target: Int) -> [Int] {
 }
 
 class Tests: XCTestCase {
-    func test0() {
+    func testExample() {
         let nums = [2, 7, 11, 15]
         let target = 9
         let solution = twoSum(nums, for: target)
         XCTAssertEqual(solution, [0, 1])
     }
     
-    func test1() {
+    func testCustom() {
         let nums = [2, 7, 11, 15, 23]
         let target = 34
         let solution = twoSum(nums, for: target)
