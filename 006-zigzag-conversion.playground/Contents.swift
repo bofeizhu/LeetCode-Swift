@@ -10,7 +10,6 @@
 /// Write the code that will take a string and make this conversion given a number of rows
 import XCTest
 
-/// Approach: Two-pass Dictionary
 func convert(_ s: String, _ numRows: Int) -> String {
     guard numRows > 1 else { return s }
     
