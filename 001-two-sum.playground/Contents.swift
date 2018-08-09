@@ -18,7 +18,9 @@ func twoSum(_ nums: [Int], for target: Int) -> [Int] {
     // 2nd pass
     for (idx, num) in nums.enumerated() {
         let complement = target - num
-        guard let complementIdx = dict[complement] else { continue }
+        guard let complementIdx = dict[complement],
+              idx != complementIdx
+        else { continue }
         return [idx, complementIdx]
     }
     
@@ -34,11 +36,11 @@ class Tests: XCTestCase {
         XCTAssertEqual(solution, [0, 1])
     }
     
-    func testCustom() {
-        let nums = [2, 7, 11, 15, 23]
-        let target = 34
+    func testNotUseSameElement() {
+        let nums = [3, 2, 4]
+        let target = 6
         let solution = twoSum(nums, for: target)
-        XCTAssertEqual(solution, [2, 4])
+        XCTAssertEqual(solution, [1, 2])
     }
 }
 
