@@ -4,6 +4,5 @@
 
 ## Note
 
-- Each playground comes with a suite of unit tests.
-
 - All the solutions have passed the judge on LeetCode.com
+- Each playground comes with a suite of unit tests.
