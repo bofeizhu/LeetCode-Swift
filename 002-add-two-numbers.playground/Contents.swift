@@ -37,10 +37,10 @@ final class ListNode {
 }
 
 /// Approach: Elementary math
-func addTwoNumbers(_ l0: ListNode?, _ l1: ListNode?) -> ListNode? {
+func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
     let dummyHead = ListNode(-1)
-    var p = l0
-    var q = l1
+    var p = l1
+    var q = l2
     var current: ListNode? = dummyHead
     var carry = 0
     while p != nil || q != nil {
@@ -67,9 +67,9 @@ class Tests: XCTestCase {
     }
     
     func testExample() {
-        let l0 = ListNode(array: [2, 4, 3])
-        let l1 = ListNode(array: [5, 6, 4])
-        let sum = addTwoNumbers(l0, l1)
+        let l1 = ListNode(array: [2, 4, 3])
+        let l2 = ListNode(array: [5, 6, 4])
+        let sum = addTwoNumbers(l1, l2)
         let expected = [7, 0, 8]
         XCTAssertEqual(expected, sum?.toArray())
     }

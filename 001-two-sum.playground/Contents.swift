@@ -8,7 +8,7 @@
 import XCTest
 
 /// Approach: Two-pass Dictionary
-func twoSum(_ nums: [Int], for target: Int) -> [Int] {
+func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
     // 1st pass build a dictionary for number -> index
     var dict: [Int: Int] = [:]
     for (idx, num) in nums.enumerated() {
@@ -32,14 +32,14 @@ class Tests: XCTestCase {
     func testExample() {
         let nums = [2, 7, 11, 15]
         let target = 9
-        let solution = twoSum(nums, for: target)
+        let solution = twoSum(nums, target)
         XCTAssertEqual(solution, [0, 1])
     }
     
     func testNotUseSameElement() {
         let nums = [3, 2, 4]
         let target = 6
-        let solution = twoSum(nums, for: target)
+        let solution = twoSum(nums, target)
         XCTAssertEqual(solution, [1, 2])
     }
 }
