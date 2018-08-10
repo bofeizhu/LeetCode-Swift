@@ -65,8 +65,8 @@ Tests.defaultTestSuite.run()
 
 func threeSum4_2(_ nums: [Int]) -> [[Int]] {
     let nums = nums.sorted()
-    var set: Set<Array<Int>> = []
-    for i in 0..<nums.count - 3 {
+    var set: Set<[Int]> = []
+    for i in 0...nums.count - 3 {
         var head = i + 1
         var tail = nums.count - 1
         while head < tail {
