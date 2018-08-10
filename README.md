@@ -20,7 +20,7 @@
 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/006-zigzag-conversion.playground/Contents.swift)
 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/007-reverse-integer.playground/Contents.swift)
 8 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/008-string-to-integer.playground/Contents.swift)
-9 | [TPalindrome Number](https://leetcode.com/problems/palindrome-number/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/009-palindrome-number.playground/Contents.swift)
+9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/009-palindrome-number.playground/Contents.swift)
 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/010-regular-expression-matching.playground/Contents.swift)
 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/011-container-with-most-water.playground/Contents.swift)
 12 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/012-integer-to-roman.playground/Contents.swift)
