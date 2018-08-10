@@ -7,21 +7,15 @@
 
 import XCTest
 
-/// Approach: Two-pass Dictionary
+/// Approach: Dictionary
 func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-    // 1st pass build a dictionary for number -> index
     var dict: [Int: Int] = [:]
     for (idx, num) in nums.enumerated() {
-        dict[num] = idx
-    }
-    
-    // 2nd pass
-    for (idx, num) in nums.enumerated() {
         let complement = target - num
-        guard let complementIdx = dict[complement],
-              idx != complementIdx
-        else { continue }
-        return [idx, complementIdx]
+        if let complementIdx = dict[complement] {
+            return [idx, complementIdx]
+        }
+        dict[num] = idx
     }
     
     // each input would have exactly one solution
@@ -33,14 +27,21 @@ class Tests: XCTestCase {
         let nums = [2, 7, 11, 15]
         let target = 9
         let solution = twoSum(nums, target)
-        XCTAssertEqual(solution, [0, 1])
+        XCTAssertEqual(solution, [1, 0])
     }
     
     func testNotUseSameElement() {
         let nums = [3, 2, 4]
         let target = 6
         let solution = twoSum(nums, target)
-        XCTAssertEqual(solution, [1, 2])
+        XCTAssertEqual(solution, [2, 1])
+    }
+    
+    func testNumsHasSameElements() {
+        let nums = [2, 2, 4]
+        let target = 4
+        let solution = twoSum(nums, target)
+        XCTAssertEqual(solution, [1, 0])
     }
 }
 
