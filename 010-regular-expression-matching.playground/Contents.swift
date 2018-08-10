@@ -11,9 +11,7 @@ import XCTest
 /// Approach: Dynamic Programming
 func isMatch(_ s: String, _ p: String) -> Bool {
     guard !p.isEmpty else {
-        guard s.isEmpty else {
-            return false
-        }
+        guard s.isEmpty else { return false }
         return true
     }
     
