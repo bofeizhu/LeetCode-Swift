@@ -8,7 +8,7 @@
 📦 | Each playground comes with a suite of unit tests.
 🐥 | Written in Swift 4.2
 
-# Problems & Solutions
+## Problems & Solutions
 
  \# | Problem  | Solution
 ----|----------|------
