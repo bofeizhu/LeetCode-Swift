@@ -6,7 +6,7 @@
 ---|-----------------
 💯 | All the solutions have been accepted by the judge of LeetCode.com
 📦 | Each playground comes with a suite of unit tests.
-🐥 | Written in Swift4.2
+🐥 | Written in Swift 4.2
 
 # Problems & Solutions
 
