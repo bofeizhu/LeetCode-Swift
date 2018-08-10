@@ -1,5 +1,6 @@
 # LeetCode-Swift
 
+[![LeetCode](https://img.shields.io/badge/LeetCode-green.svg)](https://leetcode.com)
 [![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)](https://swift.org)
 
 |  | Main Features  |
