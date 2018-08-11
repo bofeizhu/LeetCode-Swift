@@ -33,3 +33,4 @@
 18 | [Four Sum](https://leetcode.com/problems/4sum/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/018-4sum.playground/Contents.swift)
 19 | [Remove Nth Node From End of List \*](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/019-remove-nth-node-from-end-of-list.playground/Contents.swift)
 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/020-valid-parentheses.playground/Contents.swift)
+21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/021-merge-two-sorted-lists.playground/Contents.swift)
