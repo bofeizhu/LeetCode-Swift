@@ -7,6 +7,29 @@
 
 import XCTest
 
+/// Approach: Elementary math
+func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+    let dummyHead = ListNode(-1)
+    var p = l1
+    var q = l2
+    var current: ListNode? = dummyHead
+    var carry = 0
+    while p != nil || q != nil {
+        let x = p?.val ?? 0
+        let y = q?.val ?? 0
+        let sum = x + y + carry
+        carry = sum / 10
+        current?.next = ListNode(sum % 10)
+        current = current?.next
+        p = p?.next
+        q = q?.next
+    }
+    if carry > 0 {
+        current?.next = ListNode(carry)
+    }
+    return dummyHead.next
+}
+
 final class ListNode {
     var val: Int
     var next: ListNode?
@@ -34,29 +57,6 @@ final class ListNode {
         }
         return array
     }
-}
-
-/// Approach: Elementary math
-func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
-    let dummyHead = ListNode(-1)
-    var p = l1
-    var q = l2
-    var current: ListNode? = dummyHead
-    var carry = 0
-    while p != nil || q != nil {
-        let x = p?.val ?? 0
-        let y = q?.val ?? 0
-        let sum = x + y + carry
-        carry = sum / 10
-        current?.next = ListNode(sum % 10)
-        current = current?.next
-        p = p?.next
-        q = q?.next
-    }
-    if carry > 0 {
-        current?.next = ListNode(carry)
-    }
-    return dummyHead.next
 }
 
 class Tests: XCTestCase {
