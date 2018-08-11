@@ -9,6 +9,7 @@
 🎯 | Each playground comes with a suite of unit tests.
 🐥 | Written in Swift 4.2
 💎 | Follow Google's [Swift Style Guide](https://google.github.io/swift/)
+🔍 | ⌘ + F to search problem name or problam # in README
 
 
 ## Problems & Solutions
