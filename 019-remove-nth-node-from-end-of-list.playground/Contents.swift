@@ -9,23 +9,9 @@
 
 import XCTest
 
-/// - Warning: Swift judge for this problem isn't working. So the solution below hasn't been tested
-///     on LeetCode.com yet.
+/// - Warning: Swift judge for this problem is down.
 func removeNthFromEnd(_ head: ListNode?, _ n: Int) -> ListNode? {
-    var nodes: [ListNode] = []
-    var next = head
-    while next != nil {
-        nodes.append(next!)
-        next = next?.next
-    }
-    let idx = nodes.count - n
-    guard idx > 0 else {
-        head?.next = nil
-        return nodes[1] // n will always be valid
-    }
-    nodes[idx - 1].next = nodes[idx].next
-    nodes[idx].next = nil
-    return head
+    return nil
 }
 
 final class ListNode {
