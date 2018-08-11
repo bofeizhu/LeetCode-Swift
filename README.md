@@ -30,3 +30,4 @@
 15 | [Three Sum](https://leetcode.com/problems/3sum/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/015-3sum.playground/Contents.swift)
 16 | [Three Sum Closest](https://leetcode.com/problems/3sum-closest/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/016-3sum-closest.playground/Contents.swift)
 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/017-letter-combinations-of-a-phone-number.playground/Contents.swift)
+18 | [Four Sum](https://leetcode.com/problems/4sum/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/018-4sum.playground/Contents.swift)

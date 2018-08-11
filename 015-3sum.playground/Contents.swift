@@ -48,21 +48,6 @@ func threeSum(_ nums: [Int]) -> [[Int]] {
     return Array(set).map { $0.toArray() }
 }
 
-class Tests: XCTestCase {
-    func testExample() {
-        let nums = [-1, 0, 1, 2, -1, -4]
-        let expected = [
-            [-1, 0, 1],
-            [-1, -1, 2],
-        ]
-        let solutions = threeSum(nums)
-        XCTAssertEqual(solutions.count, expected.count)
-        XCTAssertEqual(Set(solutions), Set(expected))
-    }
-}
-
-Tests.defaultTestSuite.run()
-
 func threeSum4_2(_ nums: [Int]) -> [[Int]] {
     let nums = nums.sorted()
     var set: Set<[Int]> = []
@@ -84,3 +69,18 @@ func threeSum4_2(_ nums: [Int]) -> [[Int]] {
     }
     return Array(set)
 }
+
+class Tests: XCTestCase {
+    func testExample() {
+        let nums = [-1, 0, 1, 2, -1, -4]
+        let expected = [
+            [-1, 0, 1],
+            [-1, -1, 2],
+        ]
+        let solutions = threeSum(nums)
+        XCTAssertEqual(solutions.count, expected.count)
+        XCTAssertEqual(Set(solutions), Set(expected))
+    }
+}
+
+Tests.defaultTestSuite.run()
