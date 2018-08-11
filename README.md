@@ -6,8 +6,10 @@
 |  | Main Features  |
 ---|-----------------
 💯 | All the solutions have been accepted by the judge of LeetCode.com
-📦 | Each playground comes with a suite of unit tests.
+🎯 | Each playground comes with a suite of unit tests.
 🐥 | Written in Swift 4.2
+💎 | Follow Google's [Swift Style Guide](https://google.github.io/swift/)
+
 
 ## Problems & Solutions
 
