@@ -53,7 +53,7 @@ final class ListNode {
 }
 
 class Tests: XCTestCase {
-    func testListNodeInitCorretly() {
+    func testExample() {
         let head = ListNode(array: [1, 2, 3, 4])
         XCTAssertEqual(swapPairs(head)?.toArray(), [2, 1, 4, 3])
     }
