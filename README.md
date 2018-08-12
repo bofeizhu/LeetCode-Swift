@@ -39,4 +39,5 @@
 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/021-merge-two-sorted-lists.playground/Contents.swift)
 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/022-generate-parentheses.playground/Contents.swift)
 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/023-merge-k-sorted-lists.playground/Contents.swift)
-24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/023-swap-nodes-in-pairs.playground/Contents.swift)
+24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/024-swap-nodes-in-pairs.playground/Contents.swift)
+25 | [Reverse Nodes in k-Group \*](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/025-reverse-nodes-in-k-group.playground/Contents.swift)
