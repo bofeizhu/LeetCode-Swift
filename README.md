@@ -41,3 +41,4 @@
 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/023-merge-k-sorted-lists.playground/Contents.swift)
 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/024-swap-nodes-in-pairs.playground/Contents.swift)
 25 | [Reverse Nodes in k-Group \*](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/025-reverse-nodes-in-k-group.playground/Contents.swift)
+26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/026-remove-duplicates-from-sorted-array.playground/Contents.swift)
