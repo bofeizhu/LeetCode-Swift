@@ -8,7 +8,7 @@
 
 import XCTest
 
-/// Approach: Two Pointer
+/// Approach: Two Pointers
 /// Move shorter line inwards
 func maxArea(_ height: [Int]) -> Int {
     var maxArea = 0
