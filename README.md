@@ -44,3 +44,4 @@
 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/026-remove-duplicates-from-sorted-array.playground/Contents.swift) | Two Pointers
 27 | [Remove Element](https://leetcode.com/problems/remove-element/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/027-remove-element.playground/Contents.swift) | Two Pointers
 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/028-implement-strstr.playground/Contents.swift) | String
+29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/029-divide-two-integers.playground/Contents.swift) | String
