@@ -53,7 +53,11 @@ class Tests: XCTestCase {
     }
     
     func testExample2() {
-        XCTAssertEqual(divide(-2147483648, 1), -2147483648)
+        XCTAssertEqual(divide(Int(Int32.min), 1), Int(Int32.min))
+    }
+    
+    func testExample3() {
+        XCTAssertEqual(divide(Int(Int32.min), -1), Int(Int32.max))
     }
 }
 
