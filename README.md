@@ -47,3 +47,4 @@
 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/029-divide-two-integers.playground/Contents.swift) | String
 30 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/030-substring-with-concatenation-of-all-words.playground/Contents.swift) | Two Pointers
 31 | [Next Permutation](https://leetcode.com/problems/next-permutation/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/031-next-permutation.playground/Contents.swift) | Two Pointers
+32 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/032-longest-valid-parentheses.playground/Contents.swift) | Stack
