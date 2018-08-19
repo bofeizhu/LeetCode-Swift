@@ -55,3 +55,6 @@ You can visit the pages below to search problems by company tags. Then come back
 482 | [License Key Formatting](https://leetcode.com/problems/license-key-formatting/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/0482-license-key-formatting.playground/Contents.swift) | String
 681 | [Next Closest Time](https://leetcode.com/problems/next-closest-time/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/0681-next-closest-time.playground/Contents.swift) | Simulation
 683 | [K Empty Slots](https://leetcode.com/problems/k-empty-slots/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/0683-k-empty-slots.playground/Contents.swift) | Sliding Window
+843 | [Guess the Word \*](https://leetcode.com/problems/guess-the-word/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/0843-guess-the-word.playground/Contents.swift) | Minimax
+
+**\* problems are not compilable on LeetCode. I have filed bug report for these problems**
