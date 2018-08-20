@@ -65,4 +65,4 @@ You can visit the pages below to search problems by company tags. Then come back
 686 | [Repeated String Match](https://leetcode.com/problems/repeated-string-match/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/0686-repeated-string-match.playground/Contents.swift) | String
 843 | [Guess the Word \*](https://leetcode.com/problems/guess-the-word/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/0843-guess-the-word.playground/Contents.swift) | Minimax
 
-**\* problems are not compilable on LeetCode. I have filed bug report for these problems**
+**\* problems are not compilable on LeetCode. I have filed bug report for these problems.**
