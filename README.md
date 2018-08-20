@@ -13,8 +13,8 @@
 
 ## List of Companies
 You can visit the pages below to search problems by company tags. Then come back and use ⌘ + F to search by problem name or problem #. **(LeetCode subscription is required to visit these pages)**
-- [Google](https://leetcode.com/company/google/)
-- [Facebook](https://leetcode.com/company/facebook/)
+- [Google](https://leetcode.com/company/google/) (54/554)
+- [Facebook](https://leetcode.com/company/facebook/) (44/347)
 
 ## List of Problems & Solutions
  \# | Problem  | Solution | Approach
