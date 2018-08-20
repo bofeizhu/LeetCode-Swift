@@ -10,17 +10,16 @@ import XCTest
 
 /// Approach: Iteration
 func findMissingRanges(_ nums: [Int], _ lower: Int, _ upper: Int) -> [String] {
-    var numbers = [lower - 1]
-    numbers.append(contentsOf: nums)
-    numbers.append(upper + 1)
     var result: [String] = []
-    for i in 0..<numbers.count - 1 {
-        let difference = numbers[i + 1] - numbers[i]
+    for i in -1..<nums.count {
+        let current = i == -1 ? lower - 1 : nums[i]
+        let next = i + 1 < nums.count ? nums[i + 1] : upper + 1
+        let difference = next - current
         guard difference > 1 else { continue }
         if difference == 2 {
-            result.append(String(numbers[i] + 1))
+            result.append(String(current + 1))
         } else {
-            result.append(String(numbers[i] + 1) + "->" + String(numbers[i + 1] - 1))
+            result.append(String(current + 1) + "->" + String(next - 1))
         }
     }
     return result
