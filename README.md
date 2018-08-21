@@ -2,6 +2,7 @@
 
 [![LeetCode](https://img.shields.io/badge/Leet-Code-brightgreen.svg?longCache=true)](https://leetcode.com)
 [![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg?longCache=true)](https://swift.org)
+[![Solutions](https://img.shields.io/badge/Solutions-57-blue.svg?longCache=true)](https://leetcode.com/zhubofei/)
 
 |  | Main Features  |
 ---|-----------------
