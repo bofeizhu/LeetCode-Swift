@@ -61,11 +61,76 @@ struct UnionFind<T: Hashable> {
 
 /// Approach: Union Find
 func hitBricks(_ grid: [[Int]], _ hits: [[Int]]) -> [Int] {
+    var dropped = grid
+    let m = grid.count
+    guard m > 0 else { return [] }
+    let n = grid[0].count
     
+    // remove all the hits
+    for hit in hits {
+        dropped[hit[0]][hit[1]] = 0
+    }
+    
+    var dset = UnionFind<Int>()
+    dset.addSetWith(Int.min) // roof set
+    for r in 0..<m {
+        for c in 0..<n {
+            if dropped[r][c] == 1 {
+                let index = r * n + c
+                dset.addSetWith(index)
+                if r == 0 {
+                    dset.unionSetsContaining(index, and: Int.min)
+                }
+                if r > 0 && dropped[r - 1][c] == 1 {
+                    dset.unionSetsContaining(index, and: (r - 1) * n + c)
+                }
+                if c > 0 && dropped[r][c - 1] == 1 {
+                    dset.unionSetsContaining(index, and: r * n + c - 1)
+                }
+            }
+        }
+    }
+    
+    var result = Array(repeating: 0, count: hits.count)
+    for i in stride(from: hits.count - 1, through: 0, by: -1) {
+        let r = hits[i][0]
+        let c = hits[i][1]
+        let oldCount = dset.sizeOf(Int.min)
+        guard grid[r][c] == 1 else { continue }
+        let index = r * n + c
+        dset.addSetWith(index)
+        if r > 0 && dropped[r - 1][c] == 1 {
+            dset.unionSetsContaining(index, and: (r - 1) * n + c)
+        }
+        if r + 1 < m && dropped[r + 1][c] == 1 {
+            dset.unionSetsContaining(index, and: (r + 1) * n + c)
+        }
+        if c > 0 && dropped[r][c - 1] == 1 {
+            dset.unionSetsContaining(index, and: r * n + c - 1)
+        }
+        if c + 1 < n && dropped[r][c + 1] == 1 {
+            dset.unionSetsContaining(index, and: r * n + c + 1)
+        }
+        if r == 0 {
+            dset.unionSetsContaining(index, and: Int.min)
+        }
+        dropped[r][c] = 1
+        result[i] = max(0, dset.sizeOf(Int.min) - oldCount - 1)
+    }
+    return result
 }
 
 class Tests: XCTestCase {
-    func testExample() {
+    func testExample1() {
+        let grid = [[1, 0, 0, 0], [1, 1, 1, 0]]
+        let hits = [[1, 0]]
+        XCTAssertEqual(hitBricks(grid, hits), [2])
+    }
+    
+    func testExample2() {
+        let grid = [[1], [1], [1], [1], [1]]
+        let hits = [[3, 0], [4, 0], [1, 0], [2, 0], [0, 0]]
+        XCTAssertEqual(hitBricks(grid, hits), [1, 0, 1, 0, 0])
     }
 }
 

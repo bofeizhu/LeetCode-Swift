@@ -65,6 +65,7 @@ You can visit the pages below to search problems by company tags. Then come back
 683 | [K Empty Slots](https://leetcode.com/problems/k-empty-slots/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/0683-k-empty-slots.playground/Contents.swift) | Sliding Window
 686 | [Repeated String Match](https://leetcode.com/problems/repeated-string-match/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/0686-repeated-string-match.playground/Contents.swift) | String
 737 | [Sentence Similarity II \*](https://leetcode.com/problems/sentence-similarity-ii/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/0737-sentence-similarity-ii.playground/Contents.swift) | Union Find
+803 | [Bricks Falling When Hit](https://leetcode.com/problems/bricks-falling-when-hit/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/0803-bricks-falling-when-hit.playground/Contents.swift) | Union Find
 843 | [Guess the Word \*](https://leetcode.com/problems/guess-the-word/description/) | [Solution](https://github.com/zhubofei/LeetCode-Swift/blob/master/0843-guess-the-word.playground/Contents.swift) | Minimax
 
 **\* problems are not compilable on LeetCode. I have filed bug report for these problems.**
