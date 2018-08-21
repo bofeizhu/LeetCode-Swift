@@ -37,33 +37,28 @@ struct UnionFind<T: Hashable> {
     }
     
     mutating func setOf(_ element: T) -> Int? {
-        if let indexOfElement = index[element] {
-            return setByIndex(indexOfElement)
-        } else {
-            return nil
-        }
+        guard let indexOfElement = index[element] else { return nil }
+        return setByIndex(indexOfElement)
     }
     
     mutating func unionSetsContaining(_ firstElement: T, and secondElement: T) {
-        if let firstSet = setOf(firstElement), let secondSet = setOf(secondElement) {
-            if firstSet != secondSet {
-                if size[firstSet] < size[secondSet] {
-                    parent[firstSet] = secondSet
-                    size[secondSet] += size[firstSet]
-                } else {
-                    parent[secondSet] = firstSet
-                    size[firstSet] += size[secondSet]
-                }
-            }
+        guard let firstSet = setOf(firstElement),
+              let secondSet = setOf(secondElement),
+              firstSet != secondSet
+        else { return }
+        if size[firstSet] < size[secondSet] {
+            parent[firstSet] = secondSet
+            size[secondSet] += size[firstSet]
+        } else {
+            parent[secondSet] = firstSet
+            size[firstSet] += size[secondSet]
         }
     }
     
     mutating func inSameSet(_ firstElement: T, and secondElement: T) -> Bool {
-        if let firstSet = setOf(firstElement), let secondSet = setOf(secondElement) {
-            return firstSet == secondSet
-        } else {
-            return false
-        }
+        guard let firstSet = setOf(firstElement), let secondSet = setOf(secondElement)
+        else { return false }
+        return firstSet == secondSet
     }
 }
 
